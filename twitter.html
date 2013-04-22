@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Demo Twitter Feed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="library/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  
+</head>
+
+<body>
+
+  <div id="twitterapp">
+
+    <header>
+      <h1>Tweeter</h1>
+    </header>
+
+    <div class="row">
+      <div class="span4 offset1">
+        <input id="twitter-user" type="text" placeholder="Who's feed? (ScreenName)" autofocus="autofocus" tabindex=1>
+        <h5>Favourites</h5>
+        <ul>
+          <li>asdf</li>
+          <li>imkff</li>
+        </ul>
+      </div>
+      <div class="span8">
+        <section id="main">
+          <!--<input id="toggle-all" type="checkbox">-->
+          <!--<label for="toggle-all">Mark all as complete</label>-->
+          <input id="hash-filter" type="text" placeholder="Filter by hashtag" tabindex=2>
+            <input type="button" value="Fetch from Server" id="fetch-feed">
+          <ul id="tweets"></ul>
+        </section>
+      </div>
+    </div>
+
+    <footer>
+    </footer>
+
+  </div>
+
+  <div class="span9 offset5" id="credits">
+    <!--M.A. O'Brien, 2013-->
+  </div>
+
+  <script type="text/javascript" src="library/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="library/underscore/underscore.js"></script>
+  <script type="text/javascript" src="library/backbone/backbone.js"></script>
+  <script type="text/javascript" src="library/bootstrap/js/bootstrap.js"></script>
+  <script type="text/javascript" src="library/backbone/json2.js"></script>
+
+  <script type="text/javascript" src="twitter.js"></script>
+  
+    <!-- Templates -->
+
+        <script type="text/template" id="tweet-template">
+          <div class="view">
+            <label><%- text %></label>
+            <a class="destroy"></a>
+          </div>
+        </script>
+
+      </div>
+    </div>
+  </body>
+</html>
