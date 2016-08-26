@@ -1,3 +1,6 @@
+DEPRECATED due to changes to the twitter API.
+
+My first attempt at BackboneJS.
 This demo uses Backbone JS, Underscore Templating, jQuery and Twitter Bootstrap to varying degrees to interact with the Twitter public API. There is no server-side requirement to run this web app, it will run as-is by opening "index.html" in a web browser. The default Twitter feed is @Cmdr_Hadfield.
 
 Known Issues (abridged)
